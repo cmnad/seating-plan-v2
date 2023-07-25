@@ -1,0 +1,207 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.seating-plan-container {
+  position: relative;
+  padding-top: 70px;
+  height: 350px;
+}
+
+.seating-plan-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 470px;
+  height: 260px;
+  z-index: -1;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+
+.row-divider {
+  padding-top: 40px;
+}
+
+.row-name {
+  width: 30px;
+  text-align: center;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  right: -65%;
+  top: -580px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: -65%;
+  top: -292px;
+}
+
+.seat {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+.seat.selected {
+  outline: none;
+}
+
+.seat.unavailable {
+  background-color: #888;
+  cursor: not-allowed;
+  position: relative;
+}
+
+.seat.selected::after {
+  content: "\2713";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 18px;
+}
+
+.seat.selected .info-icon {
+  display: none;
+}
+
+.seat.selected .fa-info-circle {
+  display: none;
+}
+
+.seat:focus {
+  outline: 2px solid #2196f3;
+}
+
+.band-a {
+  background-color: #e22929;
+}
+
+.band-b {
+  background-color: blue;
+}
+
+.band-c {
+  background-color: black;
+}
+
+.hidden {
+  display: none;
+}
+
+.selection-container {
+  height: 25px;
+  padding-bottom: 20px;
+}
+
+#selected-seats {
+  display: none;
+}
+
+.shortcutsLink {
+  position: absolute;
+  left: -9999px;
+  z-index: 999;
+  padding: 1em;
+  background-color: black;
+  color: white;
+  opacity: 0;
+}
+
+.shortcutsLink:focus {
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+  outline: 2px solid #2196f3;
+}
+
+#close-dialog-btn {
+  outline: 2px solid #2196f3;
+}
+
+.info-icon {
+  font-size: 16px;
+}
+
+/* CSS for the continue button */
+.continue-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.continue-button:focus {
+  outline: 2px solid #2196f3;
+}
+
+.continue-button:hover {
+  background-color: #5a5959;
+}
+
+/* CSS for the table */
+#prices-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#prices-table th,
+#prices-table td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+/* CSS for the colored circles */
+.circle {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.circle.red {
+  background-color: red;
+}
+
+.circle.blue {
+  background-color: blue;
+}
+
+.circle.black {
+  background-color: black;
+}
