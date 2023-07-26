@@ -3,130 +3,127 @@
 <head>
   <meta charset="UTF-8">
   <title>Choose Seats</title>
-  <link rel="stylesheet" type="text/css" href="/seating-plan-v2/src/styles.css">
+  <link rel="stylesheet" type="text/css" href="/src/styles.css">
   <script src="https://kit.fontawesome.com/5d3ed99540.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<a tabindex="0" href="#" id="shortcuts-link" class="shortcutsLink" role="button">View shortcut keys</a>
   <h1>Choose Seats</h1>
   <div class="seating-plan-container" aria-label="Seating Plan">
-    <img src="/seating-plan-v2/src/venue-bg.png" alt="Seating plan" aria-describedby="seating-plan-description">
-    <div class="row">
-      <div class="row-name" aria-label="Row A">A</div>
-      <button class="seat band-a" tabindex="0" title="A1 - £20. In front of large speaker"><i class="fa-solid fa-info"></i></button>
-      <button class="seat band-a" tabindex="0" title="A2 - £20. In front of large speaker"><i class="fa-solid fa-info"></i></button>
-      <button class="seat band-a" tabindex="0" title="A3 - £20"></button>
-      <button class="seat band-a" tabindex="0" title="A4 - £20"></button>
-      <button class="seat band-a" tabindex="0" title="A5 - £20"></button>
-      <button class="seat band-a" tabindex="0" title="A6 - £20"></button>
-      <button class="seat band-a" tabindex="0" title="A7 - £20"></button>
-      <button class="seat band-a" tabindex="0" title="A8 - £20"></button>
-      <button class="seat band-a" tabindex="0" title="A9 - £20. In front of large speaker"><i class="fa-solid fa-info"></i></button>
-      <button class="seat band-a" tabindex="0" title="A10 - £20. In front of large speaker"><i class="fa-solid fa-info"></i></button>
-      <div class="row-name" aria-label="Row A">A</div>
-    </div>
-    <div class="row">
+    <img src="/src/venue-bg.png" alt="Seating plan" aria-describedby="seating-plan-description">
+    <div class="seats-container">
+    <div class="main-seats-container">
+      <div class="row">
+        <div class="row-name" aria-label="Row A">A</div>
+        <button class="seat band-a" tabindex="0" title="A1 - £20. In front of large speaker"><i class="fa-solid fa-info"></i></button>
+        <button class="seat band-a" tabindex="0" title="A2 - £20. In front of large speaker"><i class="fa-solid fa-info"></i></button>
+        <button class="seat band-a" tabindex="0" title="A3 - £20"></button>
+        <button class="seat band-a" tabindex="0" title="A4 - £20"></button>
+        <button class="seat band-a" tabindex="0" title="A5 - £20"></button>
+        <button class="seat band-a" tabindex="0" title="A6 - £20"></button>
+        <button class="seat band-a" tabindex="0" title="A7 - £20"></button>
+        <button class="seat band-a" tabindex="0" title="A8 - £20"></button>
+        <button class="seat band-a" tabindex="0" title="A9 - £20. In front of large speaker"><i class="fa-solid fa-info"></i></button>
+        <button class="seat band-a" tabindex="0" title="A10 - £20. In front of large speaker"><i class="fa-solid fa-info"></i></button>
+        <div class="row-name" aria-label="Row A">A</div>
+      </div>
+      <div class="row">
+          <div class="row-name" aria-label="Row B">B</div>
+        <button class="seat band-a" tabindex="0" title="B1 - £20"></button>
+        <button class="seat band-a" tabindex="0" title="B2 - £20"></button>
+        <button class="seat band-a unavailable" aria-disabled="true" tabindex="0" title="Unavailable" aria-label="Unavailable"></button>
+        <button class="seat band-a unavailable" aria-disabled="true" tabindex="0" title="Unavailable" aria-label="Unavailable"></button>
+        <button class="seat band-a" tabindex="0" title="B5 - £20"></button>
+        <button class="seat band-a" tabindex="0" title="B6 - £20"></button>
+        <button class="seat band-a" tabindex="0" title="B7 - £20"></button>
+        <button class="seat band-a" tabindex="0" title="B8 - £20"></button>
+        <button class="seat band-a" tabindex="0" title="B9 - £20"></button>
+        <button class="seat band-a" tabindex="0" title="B10 - £20"></button>
         <div class="row-name" aria-label="Row B">B</div>
-      <button class="seat band-a" tabindex="0" title="B1 - £20"></button>
-      <button class="seat band-a" tabindex="0" title="B2 - £20"></button>
-      <button class="seat band-a unavailable" aria-disabled="true" tabindex="0" title="Unavailable" aria-label="Unavailable"></button>
-      <button class="seat band-a unavailable" aria-disabled="true" tabindex="0" title="Unavailable" aria-label="Unavailable"></button>
-      <button class="seat band-a" tabindex="0" title="B5 - £20"></button>
-      <button class="seat band-a" tabindex="0" title="B6 - £20"></button>
-      <button class="seat band-a" tabindex="0" title="B7 - £20"></button>
-      <button class="seat band-a" tabindex="0" title="B8 - £20"></button>
-      <button class="seat band-a" tabindex="0" title="B9 - £20"></button>
-      <button class="seat band-a" tabindex="0" title="B10 - £20"></button>
-      <div class="row-name" aria-label="Row B">B</div>
-    </div>
-    <div class="row">
+      </div>
+      <div class="row">
+          <div class="row-name" aria-label="Row C">C</div>
+        <button class="seat band-a" tabindex="0" title="C1 - £20"></button>
+        <button class="seat band-a" tabindex="0" title="C2 - £20"></button>
+        <button class="seat band-a" tabindex="0" title="C3 - £20"></button>
+        <button class="seat band-a" tabindex="0" title="C4 - £20"></button>
+        <button class="seat band-a" tabindex="0" title="C5 - £20"></button>
+        <button class="seat band-a" tabindex="0" title="C6 - £20"></button>
+        <button class="seat band-a unavailable" aria-disabled="true" tabindex="0" title="Unavailable" aria-label="Unavailable"></button>
+        <button class="seat band-a" tabindex="0" title="C8 - £20"></button>
+        <button class="seat band-a" tabindex="0" title="C9 - £20"></button>
+        <button class="seat band-a" tabindex="0" title="C10 - £20"></button>
         <div class="row-name" aria-label="Row C">C</div>
-      <button class="seat band-a" tabindex="0" title="C1 - £20"></button>
-      <button class="seat band-a" tabindex="0" title="C2 - £20"></button>
-      <button class="seat band-a" tabindex="0" title="C3 - £20"></button>
-      <button class="seat band-a" tabindex="0" title="C4 - £20"></button>
-      <button class="seat band-a" tabindex="0" title="C5 - £20"></button>
-      <button class="seat band-a" tabindex="0" title="C6 - £20"></button>
-      <button class="seat band-a unavailable" aria-disabled="true" tabindex="0" title="Unavailable" aria-label="Unavailable"></button>
-      <button class="seat band-a" tabindex="0" title="C8 - £20"></button>
-      <button class="seat band-a" tabindex="0" title="C9 - £20"></button>
-      <button class="seat band-a" tabindex="0" title="C10 - £20"></button>
-      <div class="row-name" aria-label="Row C">C</div>
-    </div>
-    <div class="row">
+      </div>
+      <div class="row">
+          <div class="row-name" aria-label="Row D">D</div>
+        <button class="seat band-a" tabindex="0" title="D1 - £20"></button>
+        <button class="seat band-a" tabindex="0" title="D2 - £20"></button>
+        <button class="seat band-a" tabindex="0" title="D3 - £20"></button>
+        <button class="seat band-a" tabindex="0" title="D4 - £20"></button>
+        <button class="seat band-a" tabindex="0" title="D5 - £20"></button>
+        <button class="seat band-a" tabindex="0" title="D6 - £20"></button>
+        <button class="seat band-a unavailable" aria-disabled="true" tabindex="0" title="Unavailable" aria-label="Unavailable"></button>
+        <button class="seat band-a unavailable" aria-disabled="true" tabindex="0" title="Unavailable" aria-label="Unavailable"></button>
+        <button class="seat band-a unavailable" aria-disabled="true" tabindex="0" title="Unavailable" aria-label="Unavailable"></button>
+        <button class="seat band-a unavailable" aria-disabled="true" tabindex="0" title="Unavailable" aria-label="Unavailable"></button>
         <div class="row-name" aria-label="Row D">D</div>
-      <button class="seat band-a" tabindex="0" title="D1 - £20"></button>
-      <button class="seat band-a" tabindex="0" title="D2 - £20"></button>
-      <button class="seat band-a" tabindex="0" title="D3 - £20"></button>
-      <button class="seat band-a" tabindex="0" title="D4 - £20"></button>
-      <button class="seat band-a" tabindex="0" title="D5 - £20"></button>
-      <button class="seat band-a" tabindex="0" title="D6 - £20"></button>
-      <button class="seat band-a unavailable" aria-disabled="true" tabindex="0" title="Unavailable" aria-label="Unavailable"></button>
-      <button class="seat band-a unavailable" aria-disabled="true" tabindex="0" title="Unavailable" aria-label="Unavailable"></button>
-      <button class="seat band-a unavailable" aria-disabled="true" tabindex="0" title="Unavailable" aria-label="Unavailable"></button>
-      <button class="seat band-a unavailable" aria-disabled="true" tabindex="0" title="Unavailable" aria-label="Unavailable"></button>
-      <div class="row-name" aria-label="Row D">D</div>
+      </div>
+      <div class="row">
+        <div class="row-name" aria-label="Row E">E</div>
+        <button class="seat band-a" tabindex="0" title="E1 - £20. Accessible designated space for a wheelchair"><i class="fas fa-wheelchair"></i></button>
+        <button class="seat band-a" tabindex="0" title="E2 - £20. Companion seat band-a"><i class="fa-solid fa-c"></i></button>
+        <button class="seat band-a" tabindex="0" title="E3 - £20. Accessible designated space for a wheelchair"><i class="fas fa-wheelchair"></i></button>
+        <button class="seat band-a" tabindex="0" title="E4 - £20. Companion seat band-a"><i class="fa-solid fa-c"></i></button>
+        <button class="seat band-a" tabindex="0" title="E5 - £20"></button>
+        <button class="seat band-a" tabindex="0" title="E6 - £20"></button>
+        <button class="seat band-a" tabindex="0" title="E7 - £20"></button>
+        <button class="seat band-a" tabindex="0" title="E8 - £20"></button>
+        <button class="seat band-a" tabindex="0" title="E9 - £20"></button>
+        <button class="seat band-a" tabindex="0" title="E10 - £20"></i></button>
+        <div class="row-name" aria-label="Row E">E</div>
+      </div>
+      <div class="row row-divider">
+        <div class="row-name" aria-label="Row F">F</div>
+        <button class="seat band-b" tabindex="0" title="F1 - £10"></button>
+        <button class="seat band-b" tabindex="0" title="F2 - £10"></button>
+        <button class="seat band-b" tabindex="0" title="F3 - £10"></button>
+        <button class="seat band-b" tabindex="0" title="F4 - £10"></button>
+        <button class="seat band-b" tabindex="0" title="F5 - £10"></button>
+        <button class="seat band-b" tabindex="0" title="F6 - £10"></button>
+        <button class="seat band-b" tabindex="0" title="F7 - £10"></button>
+        <button class="seat band-b" tabindex="0" title="F8 - £10"></button>
+        <button class="seat band-b" tabindex="0" title="F9 - £10"></button>
+        <button class="seat band-b" tabindex="0" title="F10 - £10"></i></button>
+        <div class="row-name" aria-label="Row F">F</div>
+      </div>
+      <div class="row">
+        <div class="row-name" aria-label="Row G">G</div>
+        <button class="seat band-b" tabindex="0" title="G1 - £10"></button>
+        <button class="seat band-b" tabindex="0" title="G2 - £10"></button>
+        <button class="seat band-b" tabindex="0" title="G3 - £10"></button>
+        <button class="seat band-b" tabindex="0" title="G4 - £10"></button>
+        <button class="seat band-b" tabindex="0" title="G5 - £10"></button>
+        <button class="seat band-b" tabindex="0" title="G6 - £10"></button>
+        <button class="seat band-b" tabindex="0" title="G7 - £10"></button>
+        <button class="seat band-b" tabindex="0" title="G8 - £10"></button>
+        <button class="seat band-b" tabindex="0" title="G9 - £10"></button>
+        <button class="seat band-b" tabindex="0" title="G10 - £10"></i></button>
+        <div class="row-name" aria-label="Row G">G</div>
+      </div>
     </div>
-    <div class="row">
-      <div class="row-name" aria-label="Row E">E</div>
-      <button class="seat band-a" tabindex="0" title="E1 - £20. Accessible designated space for a wheelchair"><i class="fas fa-wheelchair"></i></button>
-      <button class="seat band-a" tabindex="0" title="E2 - £20. Companion seat band-a"><i class="fa-solid fa-c"></i></button>
-      <button class="seat band-a" tabindex="0" title="E3 - £20. Accessible designated space for a wheelchair"><i class="fas fa-wheelchair"></i></button>
-      <button class="seat band-a" tabindex="0" title="E4 - £20. Companion seat band-a"><i class="fa-solid fa-c"></i></button>
-      <button class="seat band-a" tabindex="0" title="E5 - £20"></button>
-      <button class="seat band-a" tabindex="0" title="E6 - £20"></button>
-      <button class="seat band-a" tabindex="0" title="E7 - £20"></button>
-      <button class="seat band-a" tabindex="0" title="E8 - £20"></button>
-      <button class="seat band-a" tabindex="0" title="E9 - £20"></button>
-      <button class="seat band-a" tabindex="0" title="E10 - £20"></i></button>
-      <div class="row-name" aria-label="Row E">E</div>
+    <div class="balcony-seats-contianer">
+      <div class="row right">
+        <div class="row-name" aria-label="Balcony Right Row H">H</div>
+        <button class="seat band-c" tabindex="0" title="H1 - £20"></button>
+        <button class="seat band-c" tabindex="0" title="H2 - £20"></button>
+        <button class="seat band-c" tabindex="0" title="H3 - £20"></button>
+        <button class="seat band-c" tabindex="0" title="H4 - £20"></button>
+        <button class="seat band-c" tabindex="0" title="H5 - £20"></button>
+        <p>Baclony</p>
+      </div>
     </div>
-    <div class="row row-divider">
-      <div class="row-name" aria-label="Row F">F</div>
-      <button class="seat band-b" tabindex="0" title="F1 - £10"></button>
-      <button class="seat band-b" tabindex="0" title="F2 - £10"></button>
-      <button class="seat band-b" tabindex="0" title="F3 - £10"></button>
-      <button class="seat band-b" tabindex="0" title="F4 - £10"></button>
-      <button class="seat band-b" tabindex="0" title="F5 - £10"></button>
-      <button class="seat band-b" tabindex="0" title="F6 - £10"></button>
-      <button class="seat band-b" tabindex="0" title="F7 - £10"></button>
-      <button class="seat band-b" tabindex="0" title="F8 - £10"></button>
-      <button class="seat band-b" tabindex="0" title="F9 - £10"></button>
-      <button class="seat band-b" tabindex="0" title="F10 - £10"></i></button>
-      <div class="row-name" aria-label="Row F">F</div>
-    </div>
-    <div class="row">
-      <div class="row-name" aria-label="Row G">G</div>
-      <button class="seat band-b" tabindex="0" title="G1 - £10"></button>
-      <button class="seat band-b" tabindex="0" title="G2 - £10"></button>
-      <button class="seat band-b" tabindex="0" title="G3 - £10"></button>
-      <button class="seat band-b" tabindex="0" title="G4 - £10"></button>
-      <button class="seat band-b" tabindex="0" title="G5 - £10"></button>
-      <button class="seat band-b" tabindex="0" title="G6 - £10"></button>
-      <button class="seat band-b" tabindex="0" title="G7 - £10"></button>
-      <button class="seat band-b" tabindex="0" title="G8 - £10"></button>
-      <button class="seat band-b" tabindex="0" title="G9 - £10"></button>
-      <button class="seat band-b" tabindex="0" title="G10 - £10"></i></button>
-      <div class="row-name" aria-label="Row G">G</div>
-    </div>
-    <div class="row left">
-      <div class="row-name" aria-label="Balcony Left Row H">H</div>
-      <button class="seat band-c" tabindex="0" title="H1 - £20"></button>
-      <button class="seat band-c" tabindex="0" title="H2 - £20"></button>
-      <button class="seat band-c" tabindex="0" title="H3 - £20"></button>
-      <button class="seat band-c" tabindex="0" title="H4 - £20"></button>
-      <button class="seat band-c" tabindex="0" title="H5 - £20"></button>
-      <p>Baclony</p>
-    </div>
-    <div class="row right">
-      <div class="row-name" aria-label="Balcony Right Row I">I</div>
-      <button class="seat band-c" tabindex="0" title="I1 - £20"></button>
-      <button class="seat band-c" tabindex="0" title="I2 - £20"></button>
-      <button class="seat band-c" tabindex="0" title="I3 - £20"></button>
-      <button class="seat band-c" tabindex="0" title="I4 - £20"></button>
-      <button class="seat band-c" tabindex="0" title="I5 - £20"></button>
-      <p>Baclony</p>
-    </div>
+  </div>
   </div>
   <div id="seating-plan-description" class="sr-only">
       <ul>
@@ -135,8 +132,7 @@
         <li>There is an aisle between rows E and F</li>
         <li>Either side of the stage is a large speaker infront of seats A1, A2 and A9, A10</li>
         <li>Accessible designated spaces for wheelchairs can be found in row E</li>
-        <li>There are 2 balconies either side of and overlooking the stage</li>
-        <li>The left baclony is row H and the right balcony is row I</li>
+        <li>There is a balcony, row H, on the right overlooking the stage</li>
       </ul>
   </div>
   
@@ -197,6 +193,6 @@
     </footer>
   </dialog>
 
-  <script src="/seating-plan-v2/src/index.js"></script>
+  <script src="/src/index.js"></script>
 </body>
 </html>
