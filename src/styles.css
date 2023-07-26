@@ -23,6 +23,10 @@ h1 {
   z-index: -1;
 }
 
+.seats-container {
+  display: flex;
+}
+
 .row {
   display: flex;
   align-items: center;
@@ -42,17 +46,7 @@ h1 {
 .right {
   display: flex;
   flex-direction: column;
-  position: relative;
-  right: -65%;
-  top: -580px;
-}
-
-.left {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  left: -65%;
-  top: -292px;
+  padding-left: 25px;
 }
 
 .seat {
