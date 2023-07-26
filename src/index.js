@@ -24,7 +24,7 @@ function updateSelectedSeatsText() {
     const isSelected = selectedSeats.some(
       (selectedSeat) => selectedSeat.name === seatName
     );
-    seat.setAttribute("aria-selected", isSelected.toString());
+    seat.setAttribute("aria-pressed", isSelected.toString());
   });
 }
 
